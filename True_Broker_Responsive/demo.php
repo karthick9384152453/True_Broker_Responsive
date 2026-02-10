@@ -1247,4 +1247,5 @@ $location    = $_SESSION['location'] ?? 'Coimbatore, Tamilnadu';
     </script>
 </body>
 </html>
-<!-- hello how are you -->
+</html>
+</html>
