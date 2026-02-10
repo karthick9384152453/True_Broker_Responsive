@@ -1,0 +1,208 @@
+ body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: white;
+    }
+
+
+.post-property-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-top: 5px solid #742B88;
+}
+
+h2 {
+  color: #742B88;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #1E8540;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0e6f5;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #742B88;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(116, 43, 136, 0.2);
+}
+
+.price-input {
+  display: flex;
+  align-items: center;
+}
+
+.price-input .currency {
+  padding: 0.75rem;
+  background: #f0e6f5;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  color: #742B88;
+  font-weight: bold;
+}
+
+.price-input input {
+  border-radius: 0 4px 4px 0;
+}
+
+.price-period {
+  margin-left: 0.5rem;
+  width: auto;
+}
+textarea {
+  overflow: hidden;
+  resize: none; /* Prevent manual resize */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.media-upload-area {
+  border: 2px dashed #ddd;
+  padding: 2rem;
+  text-align: center;
+  color: #555;
+  border-radius: 4px;
+  background: #f9f9f9;
+  transition: all 0.3s;
+}
+
+.media-upload-area:hover {
+  border-color: #742B88;
+  background: #f5f0f9;
+}
+
+.upload-prompt {
+  color: #666;
+}
+
+.upload-prompt i {
+  color: #1E8540;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.checkbox-group label:hover {
+  background: #f0e6f5;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+  accent-color: #1E8540;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: #742B88;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #5a216d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(116, 43, 136, 0.3);
+}
+
+.btn-secondary {
+  background: #e8f5e9;
+  color: #1E8540;
+  border: 1px solid #a5d6a7;
+}
+
+.btn-secondary:hover {
+  background: #c8e6c9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(30, 133, 64, 0.2);
+}
+
+/* Add some animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-section {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.form-section:nth-child(2) { animation-delay: 0.1s; }
+.form-section:nth-child(3) { animation-delay: 0.2s; }
+.form-section:nth-child(4) { animation-delay: 0.3s; }
+.form-section:nth-child(5) { animation-delay: 0.4s; }
+.form-section:nth-child(6) { animation-delay: 0.5s; }
